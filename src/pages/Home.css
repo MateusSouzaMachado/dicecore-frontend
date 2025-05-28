@@ -1,16 +1,57 @@
-.home-container {
+/* .home-container {
     text-align: center;
     padding: 40px;
     color: #fff;
     background-color: #1e1e2f;
     min-height: calc(100vh - 60px);
-  }
+  } */
   
-  .home-banner {
+  /* .home-banner {
     width: 80%;
     max-width: 800px;
     margin-top: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  } */
+
+  .logo-img {
+    width: 300px; /* ou 100%, ou outro valor que se ajuste melhor */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: none;         /* remove qualquer borda */
+    box-shadow: none;     /* remove sombra */
+    background: none;     /* caso tenha fundo */
+  }
+
+  .home-container {
+    background-color: #1a1a2e; /* fundo padrão da página */
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    position: relative;
+   
+    background-image: url('../assets/desfocado.png'); /* caminho da sua imagem */
+    background-size: cover;
+    background-position: center 43%;
+    background-repeat: no-repeat;
+    padding: 4rem 1rem;
+    text-align: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(0px); /* aqui só se quiser efeito de desfoque de elementos internos */
+  }
+  
+  
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(26, 26, 46, 0) 0%, #1a1a2e 100%);
+    pointer-events: none;
   }
   
